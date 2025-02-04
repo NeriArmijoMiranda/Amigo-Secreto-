@@ -25,7 +25,7 @@ function agregarAmigo() {
     mostrarListaAmigos();
     }
     else {
-        window.alert("Por favor, Agrega un nombre");
+        window.alert("Por favor, agrega un nombre");
     }
 };
 
@@ -44,8 +44,10 @@ function sortearAmigo() {
     
 }
 
+function reiniciarJuego() {
+    document.querySelector("#listaAmigos").innerHTML = '';
+    document.querySelector(".input-name").value = '';
+    document.querySelector("#resultado").innerHTML = " ";
+}
 
 
-agregarAmigo();
-mostrarListaAmigos();
-sortearAmigo();

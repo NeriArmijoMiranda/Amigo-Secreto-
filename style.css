@@ -89,7 +89,9 @@ body {
 
 .button-container {
     width: 300px;
-    justify-content: center;
+    justify-content: space-between;
+    display: flex;
+    gap: 10px;
 }
 
 /* Estilos de entrada de texto */
@@ -158,5 +160,21 @@ ul {
 }
 
 .button-draw:hover {
+    background-color: var(--color-button-hover);
+}
+
+/* Botón de reiniciar el juego */
+.reiniciar {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: auto;
+    color: var(--color-white);
+    background-color: var(--color-button);
+    font-size: 16px;
+    justify-content: center;
+}
+
+.reiniciar:hover {
     background-color: var(--color-button-hover);
 }
